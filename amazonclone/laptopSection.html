@@ -1,0 +1,269 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Products Section */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #ff9900;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-rating {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .add-to-cart:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="products-container">
+         <div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6534/6534367_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">HP Pavilion 15</div>
+        <div class="product-price">₹54,999</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6512/6512567_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Acer Aspire 5</div>
+        <div class="product-price">₹36,999</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402624_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Dell Inspiron 14</div>
+        <div class="product-price">₹49,999</div>
+        <div class="product-rating">★★★☆☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519999_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Lenovo IdeaPad Slim 3</div>
+        <div class="product-price">₹32,499</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6535/6535634_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">ASUS VivoBook 15</div>
+        <div class="product-price">₹41,999</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521222_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">HP Victus 16</div>
+        <div class="product-price">₹84,999</div>
+        <div class="product-rating">★★★★★</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455365_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Lenovo Legion 5</div>
+        <div class="product-price">₹1,07,999</div>
+        <div class="product-rating">★★★★★</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500956_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Dell XPS 13</div>
+        <div class="product-price">₹1,22,999</div>
+        <div class="product-rating">★★★★★</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6518/6518023_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Acer Nitro 5</div>
+        <div class="product-price">₹78,999</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505894_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">HP Envy x360</div>
+        <div class="product-price">₹69,999</div>
+        <div class="product-rating">★★★★★</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- 10 MORE -->
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6506/6506986_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">ASUS TUF Gaming F15</div>
+        <div class="product-price">₹95,999</div>
+        <div class="product-rating">★★★★★</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6531/6531180_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Lenovo Yoga 7</div>
+        <div class="product-price">₹88,999</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6511/6511040_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Acer Swift Go 14</div>
+        <div class="product-price">₹67,499</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6472/6472354_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Microsoft Surface Laptop 5</div>
+        <div class="product-price">₹1,12,999</div>
+        <div class="product-rating">★★★★★</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6524/6524012_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">HP Omen 17</div>
+        <div class="product-price">₹1,39,999</div>
+        <div class="product-rating">★★★★★</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6498/6498465_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Dell G15 Gaming</div>
+        <div class="product-price">₹74,999</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502945_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Lenovo ThinkPad E14</div>
+        <div class="product-price">₹82,999</div>
+        <div class="product-rating">★★★★☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image" style="background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501679_sd.jpg'); background-size: contain; background-position: center;"></div>
+    <div class="product-info">
+        <div class="product-name">Acer Chromebook Plus 15</div>
+        <div class="product-price">₹28,999</div>
+        <div class="product-rating">★★★☆☆</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+
+    </div>
+</body>
+</html>

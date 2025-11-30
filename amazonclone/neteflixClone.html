@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #141414;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        #logo{
+            font-size: 24px;
+            font-weight: bold;
+            color:rgb(180, 10, 10);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        #search{
+            flex: 1;
+            display: flex;
+            gap: 5px;
+        }
+        #search input{
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width:2rem;
+        }
+        #search button{
+            padding: 10px 20px;
+            background-color:rgb(180, 10, 10);;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+        }
+        #search button:hover{
+            background-color: rgb(255, 50, 50);
+        }
+        #library{
+            display: flex;
+            gap: 20px;
+        }
+        #library a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+        }
+        #library a:hover{
+            text-decoration: underline;
+            color:rgb(180, 10, 10);
+        }
+        .movie-item img:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">NETFLIX</div>
+        <div id="search">
+            <input type="text" placeholder="Search Movies,Shows...">
+            <button>Search</button>
+        </div>
+        <div id="library">
+            <a href="">Favourites</a>
+            <a href="">Downloads</a>
+            <a href="">Kids</a>
+        </div>
+
+    </header>
+    <div class="content" style="padding:20px;">
+        <div class="movies">
+            <h2 style="color:white; margin:20px;">Popular Movies</h2>
+         </div>
+        <div class="movies-list">
+            <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse3.mm.bing.net/th/id/OIP._5a041kOs06rEaWLTA-GOQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 1" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Inception</h3>
+            </div>
+            <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._SL1181_.jpg" alt="Movie 2" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Avengers Endgame</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.aQHX3A1wOkGE-4-MWO-tGQHaK0?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 3" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Intersteller</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://cdna.artstation.com/p/assets/images/images/031/645/214/large/shreyas-raut-avatar-2.jpg?1604210989" alt="Movie 4" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Avatar</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://i.pinimg.com/736x/b6/19/06/b61906e1a306c138d81d567d8c4becf8.jpg" alt="Movie 5" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Atonement</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://th.bing.com/th/id/OIP.QBsSQD_8_qSoP2VOfwMcyQHaK9?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 6" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Shutter Island</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://cdn.shopify.com/s/files/1/1416/8662/products/no_country_for_old_men_2007_original_film_art_5000x.jpg?v=1587153496" alt="Movie 7" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">No Country For Old Men</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://th.bing.com/th/id/OIP.TwBKAI4PW_KeeITQf18sCwHaLH?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 8" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Saving Private Ryan</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.L6KpT3fx4Y-_mucul8sNnQHaKd?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 9" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">La La Land</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.mAtxrTXyukpzgPWbZiSS5AHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 10" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">500 Days of Summer</h3>
+        </div>
+    </div>
+
+
+     <div class="shows">
+            <h2 style="color:white; margin:20px;">Popular Shows</h2>
+         </div>
+        <div class="movies-list">
+            <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/6e04e4104134375.5f5c010ef323a.jpg" alt="Movie 1" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Breaking Bad</h3>
+            </div>
+            <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://th.bing.com/th/id/OIP.PU1a8bToe5vUAlxmsxZ4bQHaK9?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 2" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Daredevil</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.ir5B7Uw2cP6IMv3l6z3hdwHaHY?w=960&h=957&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 3" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Stranger Things</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.XFQdwze_xIZjNnvbf9azuQHaK-?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 4" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">The Silient Sea</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.xrXsrutoTWCYWsXJR89wVgHaLT?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 5" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">The Punisher</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://cdna.artstation.com/p/assets/images/images/040/935/964/large/carpaa-2011-loki2-001.jpg?1630317032" alt="Movie 6" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Loki</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/3362b0182281381.652ad27d30e89.png" alt="Movie 7" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">MoonKnight</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://th.bing.com/th/id/OIP.5cSs7iIpO8RoWP0jZ9sSgwHaLH?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 8" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">From</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.WE4_y-RLw0B0mQfkNYx5HQHaK-?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 9" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Lost In Space</h3>
+        </div>
+        <div class="movie-item" style="display:inline-block; margin:10px;">
+                <img src="https://th.bing.com/th/id/OIP.L-rkJv1WdDg8ODn_bT60pgHaLH?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Movie 10" style="width:200px; height:300px; border-radius:10px;">
+                <h3 style="color:white; text-align:center;">Better Call Saul</h3>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

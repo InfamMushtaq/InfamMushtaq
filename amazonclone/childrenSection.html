@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Products Section */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #ff9900;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-rating {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .add-to-cart:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="products-container">
+       <div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81U8qj2l9WL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Cotton T-Shirt</div><div class="product-price">₹349</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81Q9u5cDI5L._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Denim Jeans</div><div class="product-price">₹699</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81bJw3FErpL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Girls Party Frock</div><div class="product-price">₹999</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81+LoiCRIrL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Hoodie</div><div class="product-price">₹749</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81y9HnhvzFL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Sports Shoes</div><div class="product-price">₹999</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<!-- 15 more -->
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/715V4uKUaYL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Girls Ethnic Lehenga</div><div class="product-price">₹1,299</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/71VrqjfFD6L._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Boys Kurta Set</div><div class="product-price">₹999</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/61llZm0aR1L._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Sandals</div><div class="product-price">₹499</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/719hhpDyItL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Winter Jacket</div><div class="product-price">₹1,399</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/61LZpyUatzL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Cotton Shorts</div><div class="product-price">₹349</div><div class="product-rating">★★★☆☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<!-- 10 more -->
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81va9iX6gRL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Joggers</div><div class="product-price">₹549</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81vxt6Z011L._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Raincoat</div><div class="product-price">₹499</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81ouSUeYE0L._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Boys T-Shirt Pack of 3</div><div class="product-price">₹699</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81Egc4ZGlbL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Girls Leggings Pack of 2</div><div class="product-price">₹499</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81Qvc2FZJvL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids School Shoes</div><div class="product-price">₹849</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/810YRO2C1yL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Party Dress</div><div class="product-price">₹1,299</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/71T8GH5vPWL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Socks Pack of 5</div><div class="product-price">₹199</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81WyGf6uIWL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Sandals Girls</div><div class="product-price">₹449</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/810LqF1MogL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Boys Shirt & Shorts Set</div><div class="product-price">₹649</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/71yT3Eyt9qL._AC_UL1500_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kids Cap</div><div class="product-price">₹199</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+    </div>
+</body>
+</html>

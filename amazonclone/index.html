@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        header {
+            background-color: #131921;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            flex: 1;
+            display: flex;
+            gap: 5px;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #ff9900;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .header-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .header-links a:hover {
+            color: #ff9900;
+        }
+
+        /* Banner */
+        .banner {
+            background: linear-gradient(135deg, #eadf66 0%,  #ff9900 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Products Section */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #ff9900;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-rating {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .start-shopping {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .view-more:hover {
+            background-color: #e68a00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #131921;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Amazon</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+        <div class="header-links">
+            <a href="#">Account</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1> DIWALI DHAMAKA SALE!!!</h1>
+        <p> Save up to 70% on selected items</p>
+    </div>
+
+    <!-- Products -->
+    <div class="products-container">
+         <div class="product-card">
+            <div class="product-image" style=" background-image: url('https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525421_sd.jpg');
+            background-size: contain;
+            background-position: center;"> </div>
+            <div class="product-info">
+                <div class="product-name">Smartphones</div>
+                <div class="product-price">starting at Rs.5000</div>
+                <div class="product-description">brands like iPhone, Samsung, OnePlus and more</div>
+                <button class="start-shopping" onclick="location.href='mobileSection.html'">start shopping</button>
+            </div>
+        </div>
+          <div class="product-card">
+            <div class="product-image" style=" background-image: url('https://tse2.mm.bing.net/th/id/OIP.30y29wUXqS17aMfWTdQ7rQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+            background-size: contain;
+            background-position: center;"> </div>
+            <div class="product-info">
+                <div class="product-name">Laptops</div>
+                <div class="product-price">starting at Rs.5000</div>
+                <div class="product-description">brands like Dell, HP, Lenovo and more</div>
+                <button class="start-shopping" onclick="location.href='laptopSection.html'">start shopping</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style=" background-image: url('https://media.istockphoto.com/photos/womens-clothing-accessories-footwear-on-wooden-background-outfit-for-picture-id918758094?b=1&k=20&m=918758094&s=170667a&w=0&h=UxQJC8MuINOWgQfQDY-ccrh1eOfDPV8cF8Q9eb2d8lI=');
+            background-size: cover;
+            background-position: center;"> </div>
+            <div class="product-info">
+                <div class="product-name">Women Fashion</div>
+                <div class="product-price">clothes starting at Rs.350</div>
+                <div class="product-description">brands like zara, H&M, Forever 21 and more</div>
+                <button class="start-shopping" onclick="location.href='womenSection.html'">start shopping</button>
+            </div>
+        </div>
+
+         <div class="product-card">
+            <div class="product-image"  style=" background-image: url('https://tse3.mm.bing.net/th/id/OIP.GcofU5ndfVKENBKYUQA9qgHaFh?rs=1&pid=ImgDetMain&o=7&rm=3');
+            background-size: cover;
+            background-position: center;"></div>
+            <div class="product-info">
+                <div class="product-name">Men Fashion</div>
+                <div class="product-price">starting at Rs.450</div>
+                <div class="product-description">brands like Zara, H&M, Forever 21 and more</div>
+                <button class="start-shopping" onclick="location.href='menSection.html'">start shopping</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <div class="product-image"  style=" background-image: url('https://static.vecteezy.com/system/resources/previews/002/786/388/non_2x/set-of-children-s-clothes-free-photo.jpg');
+            background-size: cover;
+            background-position: center;"></div>
+            <div class="product-info">
+                <div class="product-name">Children Clothing</div>
+                <div class="product-price">starting at Rs.350</div>
+                <div class="product-description">brands like Adidas, Nike, Puma and more</div>
+                <button class="start-shopping" onclick="location.href='childrenSection.html'">start shopping</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"  style=" background-image: url('https://cdn.pixabay.com/photo/2016/04/21/11/32/groceries-1343141_640.jpg');
+            background-size: cover;
+            background-position: center;"></div>
+            <div class="product-info">
+                <div class="product-name">Grocery</div>
+                <div class="product-price">starting at Rs.40</div>
+                <div class="product-description">noodles, rice, spices and more</div>
+                <button class="start-shopping" onclick="location.href='grocerySection.html'">start shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amazon Clone Created by INFAM. All rights reserved.</p>
+    </footer>
+</body>
+</html>

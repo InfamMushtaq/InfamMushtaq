@@ -1,0 +1,200 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Products Section */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #ff9900;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-rating {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .add-to-cart:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="products-container">
+     <div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/81Y8o1xeyhL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Fortune Sunflower Oil 1L</div>
+    <div class="product-price">₹150</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71A-GUdZ0LL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Aashirvaad Atta 5kg</div>
+    <div class="product-price">₹265</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71Xai0lR3BL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Tata Salt 1kg</div>
+    <div class="product-price">₹22</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71UWtZQpZCL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Bournvita 1kg</div>
+    <div class="product-price">₹399</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/716TGrhJbSL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Nestlé Corn Flakes 875g</div>
+    <div class="product-price">₹330</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Next 15 grocery items -->
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71FTbZgw0kL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">India Gate Basmati Rice 5kg</div>
+    <div class="product-price">₹620</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71sdRWBwH9L._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Surf Excel Matic 2kg</div>
+    <div class="product-price">₹430</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/81hJZwvfxYL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Tata Tea Premium 1kg</div>
+    <div class="product-price">₹499</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/61Tq4PjO0lL._AC_UL480_FMwebp_QL65_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Bru Instant Coffee 200g</div>
+    <div class="product-price">₹280</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<!-- 10 more grocery items -->
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/71iWHBy9WBL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Maggi 12 Pack</div><div class="product-price">₹160</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/71p3kpG2tCL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Amul Butter 500g</div><div class="product-price">₹255</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81WRvdrkKlL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Patanjali Ghee 1L</div><div class="product-price">₹540</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/712uMCgQ0WL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Dabur Honey 1kg</div><div class="product-price">₹399</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/61qkvcOCTL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Kellogg's Muesli 1kg</div><div class="product-price">₹460</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/613hjo4CsSL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Good Day Biscuits 1kg Pack</div><div class="product-price">₹140</div><div class="product-rating">★★★☆☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/71q4p4h3LbL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Colgate Toothpaste 4 Pack</div><div class="product-price">₹225</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/71GwDbWcgHL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Dettol Handwash 900ml</div><div class="product-price">₹165</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/81g5Bp8UwLL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Coca Cola 2.25L</div><div class="product-price">₹95</div><div class="product-rating">★★★★☆</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+<div class="product-card"><div class="product-image" style="background-image:url('https://m.media-amazon.com/images/I/61M1tboJgOL._AC_UL480_FMwebp_QL65_.jpg');background-size:contain;"></div><div class="product-info"><div class="product-name">Lay’s Potato Chips 200g</div><div class="product-price">₹70</div><div class="product-rating">★★★★★</div><button class="add-to-cart">Add to Cart</button></div></div>
+
+    </div>
+</body>
+</html>

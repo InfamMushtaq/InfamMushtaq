@@ -1,0 +1,288 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Products Section */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #ff9900;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-rating {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .add-to-cart:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="products-container">
+       <div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71fZ1J8+EkL._AC_UY1100_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Classic Denim Jacket</div>
+    <div class="product-price">₹1,899</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71fJZfYPWXL._AC_UY1100_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Slim Fit Casual Shirt</div>
+    <div class="product-price">₹799</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/51T8kY7QFkL._AC_UL800_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Formal Leather Shoes</div>
+    <div class="product-price">₹2,499</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/61uL+h+fM1L._AC_UL320_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Winter Hooded Sweatshirt</div>
+    <div class="product-price">₹1,299</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/61G9YaiK3oL._AC_UL1500_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men’s Running Sports Shoes</div>
+    <div class="product-price">₹1,599</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71Hse7TA68L._AC_UL1500_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Slim Fit Jeans</div>
+    <div class="product-price">₹1,099</div>
+    <div class="product-rating">★★★☆☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/61zTLMubUNL._AC_UL1500_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Cotton Round Neck T-Shirt</div>
+    <div class="product-price">₹499</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71gJcfi1uEL._AC_UL1500_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men’s Digital Sports Watch</div>
+    <div class="product-price">₹899</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/81wgsbblH5L._AC_UL1500_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Formal Shirt</div>
+    <div class="product-price">₹1,299</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71c-l788srL._AC_UL1500_.jpg'); background-size: contain; background-position: center;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Bomber Jacket</div>
+    <div class="product-price">₹2,299</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Next 10 -->
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/61I6oJ2cP1L._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Cargo Pants</div>
+    <div class="product-price">₹1,499</div>
+    <div class="product-rating">★★★☆☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71f8Te9YtHL._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men’s Slim Fit Blazer</div>
+    <div class="product-price">₹3,299</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71Nq9oXkOtL._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men’s Sweatpants</div>
+    <div class="product-price">₹899</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71GJgiplQeL._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Loafers</div>
+    <div class="product-price">₹1,699</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71ExFnn+BjL._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Leather Belt</div>
+    <div class="product-price">₹499</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/81qKwfI6vTL._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men’s Cotton Hoodie</div>
+    <div class="product-price">₹1,499</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/716eOYGzzIL._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Kurta Set</div>
+    <div class="product-price">₹1,899</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/81K9fY5zjQL._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men’s Perfume (100ml)</div>
+    <div class="product-price">₹749</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/81wA2ZxZI3L._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men’s Wallet</div>
+    <div class="product-price">₹599</div>
+    <div class="product-rating">★★★★★</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71uonC31HEC._AC_UL1500_.jpg'); background-size: contain;"></div>
+  <div class="product-info">
+    <div class="product-name">Men's Sunglasses</div>
+    <div class="product-price">₹899</div>
+    <div class="product-rating">★★★★☆</div>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</div>
+
+    </div>
+</body>
+</html>
